@@ -17,7 +17,10 @@ const output = "src/static/data/scraped/pa";
 const normalized = "src/static/data/normalized/pa";
 
 const scrape = async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({
+    executablePath:
+      process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined,
+  });
 
   const proms = urls.map(async (url) => {
     console.log("Scraping url #", urls.indexOf(url), ": ", url);
