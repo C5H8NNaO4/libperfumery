@@ -1,14 +1,5 @@
-declare const scrape: () => Promise<{
-    url: string;
-    data: {
-        title: string;
-        amount: string;
-        price: string;
-        cas: any;
-        scrapedAt: number;
-        baseUrl: string;
-        link: string;
-    }[][];
-}[]>;
+declare const scrape: ({ parallel }?: {
+    parallel: boolean;
+}) => Promise<any[]>;
 export declare const store: (files: any) => void;
 export { scrape };

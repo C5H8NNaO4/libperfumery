@@ -13,7 +13,7 @@ const urls = [
 ];
 const output = "src/static/data/scraped/pa";
 const normalized = "src/static/data/normalized/pa";
-const scrape = async () => {
+const scrape = async ({ parallel } = { parallel: false }) => {
     const browser = await chromium.launch({
         executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined,
     });
@@ -51,7 +51,15 @@ const scrape = async () => {
             .flat());
         return { url, data: scraped };
     });
-    const scraped = await Promise.all(proms);
+    let scraped = [];
+    if (parallel) {
+        scraped = await Promise.all(proms);
+    }
+    else {
+        for (const prom of proms) {
+            scraped.push(await prom);
+        }
+    }
     await browser.close();
     return scraped;
 };
