@@ -4,7 +4,7 @@ export const findIngredients = (query, items, distance = 1) => {
         const dTitle = item.title?.split(" ").reduce((dMin, word) => {
             return Math.min(dMin, dist(query.title || "", word));
         }, Infinity);
-        const dCAS = new RegExp(query?.cas || "").exec(item.cas)?.[0]
+        const dCAS = new RegExp(query?.cas || "").exec(item.cas === null ? "" : item.cas)?.[0]
             ? 0
             : Infinity;
         const dAmount = new RegExp(query?.amount || "").exec(item.amount || "")?.[0] ||
