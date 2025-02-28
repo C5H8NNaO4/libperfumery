@@ -22,13 +22,13 @@ const scrape = async ({ parallel } = { parallel: false }) => {
       process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined,
   });
 
+  const context = await browser.newContext({
+    userAgent:
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+  });
+
   const proms = urls.map((url) => async () => {
     console.log("Scraping url #", urls.indexOf(url), ": ", url);
-
-    const context = await browser.newContext({
-      userAgent:
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
-    });
 
     const page = await context.newPage();
     console.log("Scraping url #", " New Page, Goto URL");
