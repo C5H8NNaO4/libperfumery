@@ -28,11 +28,13 @@ export const findIngredients = (
     }, Infinity);
 
     return [
-      !query.cas ? Infinity : item.cas === null ? Infinity : dCAS,
-      query.title ? dTitle : Infinity,
-      query.description ? dDesc : Infinity,
-      query.amount ? dAmount : Infinity,
-    ].some((dist) => dist <= distance);
+      !query.cas ? null : item.cas === null ? Infinity : dCAS,
+      query.title ? dTitle : null,
+      query.description ? dDesc : null,
+      query.amount ? dAmount : null,
+    ]
+      .filter((d) => d !== null)
+      .every((dist) => dist <= distance);
   });
 
   const sorted = filtered.sort((a, b) => {
