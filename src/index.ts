@@ -3,6 +3,7 @@ import odors from "@/static/data/generated/odors.json" assert { type: "json" };
 import normalized from "./static/data/normalized/pa";
 export * from "@/utils/search";
 export * from "@/utils/scrape";
+export * from "@/utils/perfumersApprentice";
 
 const ingredients = normalized.map((ing) => {
   return {
