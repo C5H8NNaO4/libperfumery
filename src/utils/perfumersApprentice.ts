@@ -2,6 +2,7 @@ import { NormalizedItem } from "@/types/NormalizedItem";
 import { ScrapedPerfumeryItem } from "@/types/ScrapedPerfumeryApprenticeItem";
 import { Sources } from "@/types/Sources";
 import clsx from "clsx";
+import { descriptions, odors } from "..";
 
 const manufacturers = [
   "Givaudan",
@@ -70,6 +71,8 @@ export const normalize = (
     attributes: [],
     aliases: [] as string[],
     source: Sources.PerfumersApprentice,
+    odors: odors[itm.title] || null,
+    description: descriptions[itm.title] || null,
   };
 
   attributes.forEach((tag) => {

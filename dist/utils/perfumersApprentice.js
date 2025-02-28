@@ -1,5 +1,6 @@
 import { Sources } from "../types/Sources.js";
 import clsx from "clsx";
+import { descriptions, odors } from "../index.js";
 const manufacturers = [
     "Givaudan",
     "IFF",
@@ -61,6 +62,8 @@ export const normalize = (itm, i, arr) => {
         attributes: [],
         aliases: [],
         source: Sources.PerfumersApprentice,
+        odors: odors[itm.title] || null,
+        description: descriptions[itm.title] || null,
     };
     attributes.forEach((tag) => {
         const attrReg = new RegExp(`\\s?-?\\s\\(?${tag}\\)?`, "i");
