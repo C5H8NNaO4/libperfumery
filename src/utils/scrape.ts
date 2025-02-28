@@ -24,6 +24,7 @@ const scrape = async ({ parallel } = { parallel: false }) => {
 
   const proms = urls.map(async (url) => {
     console.log("Scraping url #", urls.indexOf(url), ": ", url);
+
     const page = await browser.newPage();
 
     await page.goto(url);
@@ -62,6 +63,7 @@ const scrape = async ({ parallel } = { parallel: false }) => {
         })
         .flat()
     );
+    console.log("Scraped url #", urls.indexOf(url));
 
     return { url, data: scraped };
   });
@@ -70,8 +72,8 @@ const scrape = async ({ parallel } = { parallel: false }) => {
   if (parallel) {
     scraped = await Promise.all(proms);
   } else {
-    for (const prom of proms) {
-      scraped.push(await prom);
+    for await (const prom of proms) {
+      scraped.push(prom);
     }
   }
 
