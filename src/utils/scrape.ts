@@ -26,9 +26,13 @@ const scrape = async ({ parallel } = { parallel: false }) => {
     console.log("Scraping url #", urls.indexOf(url), ": ", url);
 
     const page = await browser.newPage();
+    console.log("Scraping url #", " New Page, Goto URL");
 
     await page.goto(url);
+    console.log("Scraping url #", "  Went to URL. Evaluating");
+
     const elements = await page.$$(".product-listing li");
+    console.log("Scraping url #", "  Get elements. Evaluating");
 
     const scraped = await Promise.all(
       [...elements]
