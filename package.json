@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {
     "build": "tsc --build && tsc-alias",
-    "preinstall": "yarn build",
     "scrape": "yarn build &&  node ./dist/scripts/scrape.js",
     "test": "jest"
   },
