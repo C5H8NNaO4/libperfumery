@@ -22,7 +22,7 @@ const scrape = async ({ parallel } = { parallel: false }) => {
       process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined,
   });
 
-  const proms = urls.map(async (url) => {
+  const proms = urls.map((url) => async () => {
     console.log("Scraping url #", urls.indexOf(url), ": ", url);
 
     const page = await browser.newPage();
@@ -70,10 +70,10 @@ const scrape = async ({ parallel } = { parallel: false }) => {
 
   let scraped = [];
   if (parallel) {
-    scraped = await Promise.all(proms);
+    scraped = await Promise.all(proms.map((p) => p()));
   } else {
     for await (const prom of proms) {
-      scraped.push(prom);
+      scraped.push(await prom());
     }
   }
 
