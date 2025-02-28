@@ -28,7 +28,7 @@ export const findIngredients = (
     }, Infinity);
 
     return [
-      !query.cas ? null : item.cas === null ? Infinity : dCAS,
+      !query.cas ? null : dCAS,
       query.title ? dTitle : null,
       query.description ? dDesc : null,
       query.amount ? dAmount : null,

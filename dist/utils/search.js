@@ -16,7 +16,7 @@ export const findIngredients = (query, items, distance = 1) => {
             return Math.min(dMin, dist(new RegExp(query.description || "").exec(word)?.[0] || "", word));
         }, Infinity);
         return [
-            !query.cas ? null : item.cas === null ? Infinity : dCAS,
+            !query.cas ? null : dCAS,
             query.title ? dTitle : null,
             query.description ? dDesc : null,
             query.amount ? dAmount : null,
