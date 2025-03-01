@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc --build && tsc-alias",
-    "scrape": "yarn build &&  node ./dist/scripts/scrape.js",
+    "scrapePA": "yarn build &&  node ./dist/scripts/scrape.js",
+    "scrapePW": "yarn build &&  node ./dist/scripts/scrapePellwall.js",
     "test": "jest"
   },
   "repository": {
