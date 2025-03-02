@@ -4,8 +4,6 @@ export * from "./utils/search.js";
 export * from "./utils/scrape.js";
 export * from "./utils/perfumersApprentice.js";
 declare const ingredients: ({
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -19,8 +17,6 @@ declare const ingredients: ({
     source: string;
     cas?: undefined;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -40,8 +36,6 @@ declare const ingredients: ({
     aliases: any[];
     source: string;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -55,8 +49,6 @@ declare const ingredients: ({
     aliases: string[];
     source: string;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -72,8 +64,6 @@ declare const ingredients: ({
     source: string;
     cas?: undefined;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -89,8 +79,6 @@ declare const ingredients: ({
     aliases: any[];
     source: string;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -106,8 +94,6 @@ declare const ingredients: ({
     source: string;
     cas?: undefined;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -123,8 +109,6 @@ declare const ingredients: ({
     aliases: any[];
     source: string;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -140,8 +124,6 @@ declare const ingredients: ({
     aliases: any[];
     source: string;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -161,8 +143,6 @@ declare const ingredients: ({
     source: string;
     cas?: undefined;
 } | {
-    odors: any;
-    description: any;
     title: string;
     amount: string;
     price: string;
@@ -177,5 +157,163 @@ declare const ingredients: ({
     aliases: any[];
     source: string;
     cas?: undefined;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: string[];
+    description: string;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: string[];
+    source: string;
+    odors: any;
+    description: any;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: string[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: any;
+    description: any;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: string[];
+    description: string;
+    cas?: undefined;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: string[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: any;
+    description: any;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: string[];
+    description: string;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: {
+        manufacturer: string;
+    }[];
+    aliases: any[];
+    source: string;
+    odors: any;
+    description: any;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: string[];
+    source: string;
+    odors: any;
+    description: any;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: {
+        dilutant: string;
+    }[];
+    aliases: any[];
+    source: string;
+    odors: any;
+    description: any;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: any;
+    description: any;
+    cas?: undefined;
+} | {
+    href: string;
+    title: string;
+    price: string;
+    size: string;
+    cas: string;
+    scrapedAt: number;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: string[];
+    source: string;
+    odors: any;
+    description: any;
 })[];
 export { descriptions, odors, ingredients };

@@ -3,5 +3,5 @@ export type PerfumeryItemQuery = {
     description?: string;
     odor?: string;
     cas?: string;
-    amount?: string;
+    size?: string;
 };

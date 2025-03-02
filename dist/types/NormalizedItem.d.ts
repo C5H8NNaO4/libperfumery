@@ -3,10 +3,10 @@ export type NormalizedItem = {
     title: string;
     price: string;
     source: Sources;
-    amount: string;
+    size: string;
     dilution: string;
     cas?: string;
-    link?: string;
+    href?: string;
     tags: string[];
     aliases: string[];
     odors?: string[];

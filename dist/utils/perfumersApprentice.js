@@ -1,47 +1,8 @@
 import { Sources } from "../types/Sources.js";
 import clsx from "clsx";
 import { descriptions, odors } from "../index.js";
-const manufacturers = [
-    "Givaudan",
-    "IFF",
-    "Synarome",
-    "Symrise",
-    "Firmenich",
-    "Biolandes",
-];
-const origins = [
-    "Haiti",
-    "Marocco",
-    "Calabria, IT",
-    "Mysore",
-    "Australia",
-    "Comoros",
-    "USA",
-    "South Africa",
-    "Hungary",
-    "India",
-    "Spain",
-    "Texas",
-    "Romania",
-    "Egyptian",
-];
-const attributes = [
-    "Multi Origin",
-    "Synthetic",
-    "Crystalline Powder",
-    "Blue",
-    "Crystals",
-    "Key Accord",
-    "Blend",
-    "Rectified",
-    "Essential Oil",
-    "BF",
-    "Colorless",
-    "Natural",
-    "P&N",
-    "Premium",
-];
-export const normalize = (itm, i, arr) => {
+import { attributes, manufacturers, origins, } from "../static/definitions/ingredients.js";
+export const normalize = ({ amount, ...itm }, i, arr) => {
     const title = itm?.title
         .replace(/\s\*\*/g, "")
         .replace(/\s\(Natural\)/, "")
@@ -50,6 +11,7 @@ export const normalize = (itm, i, arr) => {
     console.log("Normalizing item: '" + title + "'");
     const norm = {
         ...itm,
+        size: amount,
         dilution: /\d+%/.exec(itm?.title)?.[0] || "100%",
         title: title.trim(),
         tags: clsx({

@@ -1,16 +1,11 @@
 import descriptions from "@/static/data/generated/descriptions.json" assert { type: "json" };
 import odors from "@/static/data/generated/odors.json" assert { type: "json" };
-import normalized from "./static/data/normalized/pa";
+import normalizedPA from "./static/data/normalized/pa";
+import normalizedPW from "./static/data/normalized/pw";
 export * from "@/utils/search";
 export * from "@/utils/scrape";
 export * from "@/utils/perfumersApprentice";
 
-const ingredients = normalized.map((ing) => {
-  return {
-    ...ing,
-    odors: odors[ing.title],
-    description: descriptions[ing.title],
-  };
-});
+const ingredients = [normalizedPA, normalizedPW].flat();
 
 export { descriptions, odors, ingredients };

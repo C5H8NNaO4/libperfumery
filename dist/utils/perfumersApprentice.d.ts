@@ -1,3 +1,3 @@
 import { NormalizedItem } from "../types/NormalizedItem.js";
-import { ScrapedPerfumeryItem } from "../types/ScrapedPerfumeryApprenticeItem.js";
-export declare const normalize: (itm: ScrapedPerfumeryItem, i?: number, arr?: ScrapedPerfumeryItem[]) => NormalizedItem;
+import { ScrapedPAItem } from "../types/ScrapedItem.js";
+export declare const normalize: ({ amount, ...itm }: ScrapedPAItem, i?: number, arr?: ScrapedPAItem[]) => NormalizedItem;

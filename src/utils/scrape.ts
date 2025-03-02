@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import path from "path";
 import fs from "fs";
-import { normalize } from "./perfumersApprentice.js";
+import { normalize as normalizePA } from "./perfumersApprentice.js";
 
 const urls = [
   "https://shop.perfumersapprentice.com/c-244-all-fragrance-ingredients.aspx?pagerange=0-B",
@@ -13,8 +13,8 @@ const urls = [
   "https://shop.perfumersapprentice.com/c-244-all-fragrance-ingredients.aspx?pagerange=S-Z",
 ];
 
-const output = "src/static/data/scraped/pa";
-const normalized = "src/static/data/normalized/pa";
+const defOutputPath = "src/static/data/scraped/pa";
+const defNormalizedPath = "src/static/data/normalized/pa";
 
 const scrape = async ({ parallel } = { parallel: false }) => {
   const browser = await chromium.launch({
@@ -44,7 +44,7 @@ const scrape = async ({ parallel } = { parallel: false }) => {
         .map(async (li) => {
           return await li.evaluate((li) => {
             const baseUrl = "https://shop.perfumersapprentice.com";
-            const link = li.querySelector("a")?.href;
+            const href = li.querySelector("a")?.href;
             const title = li.querySelector("h2")?.innerText;
 
             const cas = (Array.from(li.querySelectorAll("p")) as any[])
@@ -54,16 +54,15 @@ const scrape = async ({ parallel } = { parallel: false }) => {
               li.querySelectorAll("select option")
             ).map((option: any) => {
               const text = option.innerText;
-              const [, amount] = /(\d+(?:g|kg|ml))/.exec(text) || [];
+              const [, size] = /(\d+(?:g|kg|ml))/.exec(text) || [];
               const [, price] = /\$(\d+)/.exec(text) || [];
               return {
                 title,
-                amount,
+                size,
                 price: price + "$",
                 cas,
                 scrapedAt: +new Date(),
-                baseUrl,
-                link: link.replace(baseUrl, ""),
+                href,
               };
             });
 
@@ -90,14 +89,22 @@ const scrape = async ({ parallel } = { parallel: false }) => {
   return scraped;
 };
 
-export const store = (files) => {
+export const store = (
+  files,
+  {
+    format = (url) => url.slice(-3) + ".json",
+    normalize = normalizePA,
+    output = defOutputPath,
+    normalized = defNormalizedPath,
+  }: any = {}
+) => {
   files.forEach(({ data: scraped, url }) => {
     const pathAbs = path.resolve(output);
     const pathNorm = path.resolve(normalized);
-    const name = url.slice(-3).replace("-", "") + ".json";
+    const name = format(url);
     const cleaned = scraped
       .flat()
-      .filter((itm) => itm?.title && itm?.amount && itm?.price);
+      .filter((itm) => itm?.title && itm?.size && itm?.price);
     console.log(
       "Filtered ",
       scraped.length - cleaned.length,

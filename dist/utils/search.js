@@ -9,8 +9,8 @@ export const findIngredients = (query, items, distance = 1) => {
         const dCAS = new RegExp(query?.cas || "").exec(!item.cas ? "" : item.cas)?.[0]
             ? 0
             : Infinity;
-        const dAmount = new RegExp(query?.amount || "").exec(item.amount || "")?.[0] ||
-            "" === item.amount ||
+        const dAmount = new RegExp(query?.size || "").exec(item.size || "")?.[0] ||
+            "" === item.size ||
             ""
             ? 0
             : Infinity;
@@ -21,7 +21,7 @@ export const findIngredients = (query, items, distance = 1) => {
             !query.cas ? null : dCAS,
             query.title ? dTitle : null,
             query.description ? dDesc : null,
-            query.amount ? dAmount : null,
+            query.size ? dAmount : null,
         ]
             .filter((d) => d !== null)
             .every((dist) => dist <= distance);
@@ -31,8 +31,8 @@ export const findIngredients = (query, items, distance = 1) => {
             ? "cas"
             : query.description
                 ? "description"
-                : query.amount
-                    ? "amount"
+                : query.size
+                    ? "size"
                     : "title";
         const aDist = dist(query[prop] || "", a[prop] || "");
         const bDist = dist(query[prop] || "", b[prop] || "");

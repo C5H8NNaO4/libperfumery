@@ -18,8 +18,8 @@ export const findIngredients = (
       ? 0
       : Infinity;
     const dAmount =
-      new RegExp(query?.amount || "").exec(item.amount || "")?.[0] ||
-      "" === item.amount ||
+      new RegExp(query?.size || "").exec(item.size || "")?.[0] ||
+      "" === item.size ||
       ""
         ? 0
         : Infinity;
@@ -34,7 +34,7 @@ export const findIngredients = (
       !query.cas ? null : dCAS,
       query.title ? dTitle : null,
       query.description ? dDesc : null,
-      query.amount ? dAmount : null,
+      query.size ? dAmount : null,
     ]
       .filter((d) => d !== null)
       .every((dist) => dist <= distance);
@@ -45,8 +45,8 @@ export const findIngredients = (
       ? "cas"
       : query.description
       ? "description"
-      : query.amount
-      ? "amount"
+      : query.size
+      ? "size"
       : "title";
 
     const aDist = dist(query[prop] || "", a[prop] || "");

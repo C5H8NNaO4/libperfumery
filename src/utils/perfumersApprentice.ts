@@ -1,55 +1,18 @@
 import { NormalizedItem } from "@/types/NormalizedItem";
-import { ScrapedPerfumeryItem } from "@/types/ScrapedPerfumeryApprenticeItem";
+import { ScrapedPAItem } from "@/types/ScrapedItem";
 import { Sources } from "@/types/Sources";
 import clsx from "clsx";
 import { descriptions, odors } from "..";
+import {
+  attributes,
+  manufacturers,
+  origins,
+} from "@/static/definitions/ingredients";
 
-const manufacturers = [
-  "Givaudan",
-  "IFF",
-  "Synarome",
-  "Symrise",
-  "Firmenich",
-  "Biolandes",
-];
-
-const origins = [
-  "Haiti",
-  "Marocco",
-  "Calabria, IT",
-  "Mysore",
-  "Australia",
-  "Comoros",
-  "USA",
-  "South Africa",
-  "Hungary",
-  "India",
-  "Spain",
-  "Texas",
-  "Romania",
-  "Egyptian",
-];
-
-const attributes = [
-  "Multi Origin",
-  "Synthetic",
-  "Crystalline Powder",
-  "Blue",
-  "Crystals",
-  "Key Accord",
-  "Blend",
-  "Rectified",
-  "Essential Oil",
-  "BF",
-  "Colorless",
-  "Natural",
-  "P&N",
-  "Premium",
-];
 export const normalize = (
-  itm: ScrapedPerfumeryItem,
+  { amount, ...itm }: ScrapedPAItem,
   i?: number,
-  arr?: ScrapedPerfumeryItem[]
+  arr?: ScrapedPAItem[]
 ): NormalizedItem => {
   const title = itm?.title
     .replace(/\s\*\*/g, "")
@@ -59,6 +22,7 @@ export const normalize = (
   console.log("Normalizing item: '" + title + "'");
   const norm = {
     ...itm,
+    size: amount,
     dilution: /\d+%/.exec(itm?.title)?.[0] || "100%",
     title: title.trim(),
     tags: clsx({

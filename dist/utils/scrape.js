@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import path from "path";
 import fs from "fs";
-import { normalize } from "./perfumersApprentice.js";
+import { normalize as normalizePA } from "./perfumersApprentice.js";
 const urls = [
     "https://shop.perfumersapprentice.com/c-244-all-fragrance-ingredients.aspx?pagerange=0-B",
     "https://shop.perfumersapprentice.com/c-244-all-fragrance-ingredients.aspx?pagerange=C-D",
@@ -11,8 +11,8 @@ const urls = [
     "https://shop.perfumersapprentice.com/c-244-all-fragrance-ingredients.aspx?pagerange=O-R",
     "https://shop.perfumersapprentice.com/c-244-all-fragrance-ingredients.aspx?pagerange=S-Z",
 ];
-const output = "src/static/data/scraped/pa";
-const normalized = "src/static/data/normalized/pa";
+const defOutputPath = "src/static/data/scraped/pa";
+const defNormalizedPath = "src/static/data/normalized/pa";
 const scrape = async ({ parallel } = { parallel: false }) => {
     const browser = await chromium.launch({
         executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined,
@@ -32,23 +32,22 @@ const scrape = async ({ parallel } = { parallel: false }) => {
             .map(async (li) => {
             return await li.evaluate((li) => {
                 const baseUrl = "https://shop.perfumersapprentice.com";
-                const link = li.querySelector("a")?.href;
+                const href = li.querySelector("a")?.href;
                 const title = li.querySelector("h2")?.innerText;
                 const cas = Array.from(li.querySelectorAll("p"))
                     .find((p) => p.innerText?.match(/\d+-\d{2}-\d{1}/g)?.[0])
                     ?.innerText?.match(/\d+-\d{2}-\d{1}/g)?.[0];
                 const options = Array.from(li.querySelectorAll("select option")).map((option) => {
                     const text = option.innerText;
-                    const [, amount] = /(\d+(?:g|kg|ml))/.exec(text) || [];
+                    const [, size] = /(\d+(?:g|kg|ml))/.exec(text) || [];
                     const [, price] = /\$(\d+)/.exec(text) || [];
                     return {
                         title,
-                        amount,
+                        size,
                         price: price + "$",
                         cas,
                         scrapedAt: +new Date(),
-                        baseUrl,
-                        link: link.replace(baseUrl, ""),
+                        href,
                     };
                 });
                 return options;
@@ -70,14 +69,14 @@ const scrape = async ({ parallel } = { parallel: false }) => {
     await browser.close();
     return scraped;
 };
-export const store = (files) => {
+export const store = (files, { format = (url) => url.slice(-3) + ".json", normalize = normalizePA, output = defOutputPath, normalized = defNormalizedPath, } = {}) => {
     files.forEach(({ data: scraped, url }) => {
         const pathAbs = path.resolve(output);
         const pathNorm = path.resolve(normalized);
-        const name = url.slice(-3).replace("-", "") + ".json";
+        const name = format(url);
         const cleaned = scraped
             .flat()
-            .filter((itm) => itm?.title && itm?.amount && itm?.price);
+            .filter((itm) => itm?.title && itm?.size && itm?.price);
         console.log("Filtered ", scraped.length - cleaned.length, " Remaining: ", cleaned.length);
         fs.writeFile(pathAbs + "/" + name, JSON.stringify(cleaned), () => {
             console.log("Scraped", name);
