@@ -1,7 +1,12 @@
-import page1 from "./page1.json" assert { type: "json" };
-import page2 from "./page2.json" assert { type: "json" };
-import page3 from "./page3.json" assert { type: "json" };
+async function importPages() {
+  const pageNumbers = Array.from({ length: 42 }).map((e, i) => i + 1); // Add or remove numbers as needed
+  const importPromises = pageNumbers.map(
+    (num) => import(`./page${num}.json`, { assert: { type: "json" } })
+  );
 
-const normalizedPW = [page1, page2, page3].flat();
+  const pages = await Promise.all(importPromises);
+  const normalizedPW = pages.map((module) => module.default).flat();
+  return normalizedPW;
+}
 
-export default normalizedPW;
+export default importPages();
