@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "rootDirs": ["src"],
+        "declaration": true,
+        "outDir": "dist",
+        "target": "ES2022",
+        "lib": ["ESNext", "DOM"],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "types": ["node"],
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["./**/*.json"],
+    "tsc-alias": {
+        "verbose": false,
+        "resolveFullPaths": true
+    }
+}

@@ -1,3 +1,3 @@
-import { scrape, store } from "../utils/scrape.js";
+import { scrape, store } from "@/utils/scrape";
 const data = await scrape();
 await store(data);

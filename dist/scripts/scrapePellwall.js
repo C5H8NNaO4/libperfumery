@@ -1,6 +1,6 @@
-import { normalize } from "../utils/pellwall/normalize.js";
-import { scrape } from "../utils/pellwall/scrape.js";
-import { store } from "../utils/scrape.js";
+import { normalize } from "@/utils/pellwall/normalize";
+import { scrape } from "@/utils/pellwall/scrape";
+import { store } from "@/utils/scrape";
 const batch = async (i) => {
     const data = await scrape({
         parallel: false,

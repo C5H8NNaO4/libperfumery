@@ -1,0 +1,880 @@
+{
+    "Oud Assafi™": ["animalic", "leathery", "woody", "ambery", "spicy"],
+    "Orange Flower Absolute": ["Floral", "Citrus", "Honeyed", "Green", "Fresh"],
+    "Geosmin": [
+        "earthy",
+        "wet soil",
+        "freshly plowed ground",
+        "rooty",
+        "damp forest floor",
+        "mineral",
+        "beet-like",
+        "mushroomy",
+        "slightly metallic"
+    ],
+    "1-Octen-3-ol": [
+        "mushroom-like",
+        "earthy",
+        "green",
+        "fungal",
+        "damp soil",
+        "metallic",
+        "forest floor",
+        "wet leaves",
+        "slightly woody"
+    ],
+    "Aldehyde C-10": [
+        "citrusy",
+        "orange peel",
+        "waxy",
+        "soapy",
+        "fresh",
+        "aldehydic",
+        "clean",
+        "zesty",
+        "fatty"
+    ],
+    "Aldehyde C-12 MNA": [
+        "citrusy",
+        "lemon peel",
+        "metallic",
+        "aldehydic",
+        "sharp",
+        "fresh",
+        "oceanic",
+        "clean",
+        "zesty"
+    ],
+    "Aldehyde C-8": [
+        "juicy",
+        "citrusy",
+        "orange",
+        "fruity",
+        "peachy",
+        "aldehydic",
+        "bright",
+        "sweet",
+        "fresh"
+    ],
+    "Amarocit": [
+        "citrusy",
+        "sharp",
+        "tangy",
+        "zesty",
+        "orange",
+        "grapefruit",
+        "fresh",
+        "crisp",
+        "invigorating"
+    ],
+    "Amber Xtreme": [
+        "amber",
+        "resinous",
+        "warm",
+        "spicy",
+        "rich",
+        "sweet",
+        "balsamic",
+        "earthy",
+        "woody"
+    ],
+    "Ambercore": [
+        "amber",
+        "warm",
+        "resinous",
+        "sweet",
+        "balsamic",
+        "woody",
+        "earthy",
+        "powdery",
+        "spicy"
+    ],
+    "Ambergris T Oliffac": [
+        "marine",
+        "earthy",
+        "sweet",
+        "animalic",
+        "warm",
+        "resinous",
+        "woody",
+        "amber",
+        "salty"
+    ],
+    "Ambrettolide": ["musky", "sweet", "floral", "animalic", "warm", "velvety"],
+    "Ambroxan": ["amber", "woody", "marine", "musky", "warm", "clean"],
+    "Aphermate": ["floral", "animalic", "sweet", "warm", "inviting", "intimate"],
+    "Aquaflor": ["aquatic", "fresh", "marine", "floral", "green", "invigorating"],
+    "Beeswax Absolute": [
+        "honeyed",
+        "waxy",
+        "warm",
+        "floral",
+        "earthy",
+        "tobacco-like"
+    ],
+    "Bergamot - Essential Oil - Calabria, IT": [
+        "citrusy",
+        "zesty",
+        "green",
+        "floral",
+        "bitter",
+        "spicy",
+        "fresh"
+    ],
+    "Beta Pinene": ["woody", "piney", "resinous", "fresh", "green", "earthy"],
+    "Beyond Hivernal": [
+        "cool",
+        "fresh",
+        "airy",
+        "metallic",
+        "ozonic",
+        "woody",
+        "crystalline"
+    ],
+    "BHT Crystals": ["slightly sweet", "woody", "chemical", "dry", "neutral"],
+    "Birch Tar (Rectified)": [
+        "smoky",
+        "woody",
+        "resinous",
+        "earthy",
+        "medicinal"
+    ],
+    "Black Hemlock Absolute": [
+        "herbaceous",
+        "woody",
+        "earthy",
+        "resinous",
+        "sweet"
+    ],
+    "Blackcurrant Absolute": [
+        "fruity",
+        "green",
+        "tart",
+        "earthy",
+        "sweet",
+        "leafy"
+    ],
+    "Bornafix": [
+        "woody",
+        "fresh",
+        "herbaceous",
+        "clean",
+        "green",
+        "balsamic",
+        "slightly floral"
+    ],
+    "Bran Absolute": [
+        "nutty",
+        "earthy",
+        "toasted",
+        "warm",
+        "sweet",
+        "grainy",
+        "rich",
+        "gourmand",
+        "baked"
+    ],
+    "Broom Absolute": [
+        "sweet",
+        "herbaceous",
+        "floral",
+        "honeyed",
+        "green",
+        "slightly woody",
+        "warm",
+        "hay-like"
+    ],
+    "Calone": [
+        "marine",
+        "ozonic",
+        "fresh",
+        "watery",
+        "saline",
+        "clean",
+        "fruity",
+        "light",
+        "crisp"
+    ],
+    "Cashmeran": [
+        "woody",
+        "musky",
+        "floral",
+        "warm",
+        "soft",
+        "smooth",
+        "ambery",
+        "elegant",
+        "rich"
+    ],
+    "Castoreum Absolute": [
+        "animalic",
+        "leathery",
+        "warm",
+        "resinous",
+        "musky",
+        "sweet",
+        "earthy",
+        "woody",
+        "amber"
+    ],
+    "Cedarwood EO": [
+        "woody",
+        "earthy",
+        "smoky",
+        "resinous",
+        "balsamic",
+        "warm",
+        "calming",
+        "grounding"
+    ],
+    "Cedryl Acetat": [
+        "woody",
+        "dry",
+        "balsamic",
+        "earthy",
+        "warm",
+        "resinous",
+        "smoky"
+    ],
+    "Celestolide": [
+        "musky",
+        "clean",
+        "soft",
+        "floral",
+        "skin-like",
+        "warm",
+        "elegant",
+        "airy"
+    ],
+    "Cis-3-hexen-1-ol": [
+        "green",
+        "grassy",
+        "fresh",
+        "leafy",
+        "slightly sweet",
+        "herbal",
+        "natural"
+    ],
+    "Cistus Oil": [
+        "balsamic",
+        "woody",
+        "floral",
+        "sweet",
+        "resinous",
+        "earthy",
+        "amber",
+        "herbaceous"
+    ],
+    "Civet Absolute": [
+        "animalic",
+        "musky",
+        "warm",
+        "sweet",
+        "rich",
+        "sensual",
+        "deep",
+        "intriguing"
+    ],
+    "Civettone": [
+        "musky",
+        "animalic",
+        "warm",
+        "earthy",
+        "sweet",
+        "velvety",
+        "sensual",
+        "intimate",
+        "rich"
+    ],
+    "Clearwood®": [
+        "woody",
+        "fresh",
+        "clean",
+        "light",
+        "transparent",
+        "elegant",
+        "soft",
+        "refined",
+        "warm"
+    ],
+    "Costus Oliffac": [
+        "animalic",
+        "earthy",
+        "leathery",
+        "warm",
+        "musky",
+        "vintage",
+        "deep",
+        "grounding",
+        "complex"
+    ],
+    "Coumarin": [
+        "sweet",
+        "vanilla",
+        "almond-like",
+        "hay-like",
+        "warm",
+        "creamy",
+        "grassy",
+        "spicy",
+        "dry"
+    ],
+    "Cypress EO": [
+        "woody",
+        "green",
+        "resinous",
+        "earthy",
+        "cooling",
+        "fresh",
+        "evergreen",
+        "soothing",
+        "crisp",
+        "natural"
+    ],
+    "Dirt Fragrance Oil": [
+        "earthy",
+        "damp",
+        "organic",
+        "mineral",
+        "green",
+        "fresh",
+        "rich",
+        "grounding",
+        "rustic",
+        "tranquil"
+    ],
+    "Dowanol": [
+        "clean",
+        "subtle",
+        "neutral",
+        "smooth",
+        "slightly sweet",
+        "soft",
+        "fresh",
+        "unobtrusive",
+        "light",
+        "balancing"
+    ],
+    "Ethylene Brassylate": [
+        "sweet",
+        "fruity",
+        "animalic",
+        "warm",
+        "musk",
+        "tropical",
+        "earthy",
+        "rich",
+        "complex",
+        "fresh"
+    ],
+    "Eucalyptus Bioabsolute": [
+        "refreshing",
+        "crisp",
+        "herbal",
+        "clean",
+        "invigorating",
+        "camphoraceous",
+        "earthy",
+        "uplifting",
+        "vital",
+        "airy"
+    ],
+    "Evernyl": [
+        "woody",
+        "mossy",
+        "earthy",
+        "resinous",
+        "herbal",
+        "fresh",
+        "green",
+        "sweet",
+        "grounding",
+        "complex"
+    ],
+    "Exaltolide": [
+        "musky",
+        "creamy",
+        "sweet",
+        "warm",
+        "velvety",
+        "floral",
+        "intimate",
+        "sophisticated",
+        "rich",
+        "alluring"
+    ],
+    "Farnesol": [
+        "floral",
+        "sweet",
+        "green",
+        "citrusy",
+        "fresh",
+        "soothing",
+        "natural",
+        "clean",
+        "light",
+        "inviting"
+    ],
+    "Fir Balsam": [
+        "woody",
+        "fresh",
+        "resinous",
+        "earthy",
+        "green",
+        "invigorating",
+        "slightly sweet",
+        "uplifting",
+        "comforting",
+        "natural"
+    ],
+    "Fixateur 505E": [
+        "balsamic",
+        "woody",
+        "amber",
+        "spicy",
+        "floral",
+        "sweet",
+        "earthy",
+        "resinous",
+        "citrusy",
+        "vanilla"
+    ],
+    "Floralozone": [
+        "ozonic",
+        "floral",
+        "green",
+        "citrus",
+        "fresh",
+        "sweet",
+        "earthy",
+        "herbaceous"
+    ],
+    "Galaxolide": [
+        "musky",
+        "sweet",
+        "powdery",
+        "clean",
+        "floral",
+        "woody",
+        "fruity",
+        "amber"
+    ],
+    "Galbanum Oil": [
+        "green",
+        "herbaceous",
+        "woody",
+        "resinous",
+        "floral",
+        "earthy",
+        "citrus"
+    ],
+    "Galbanum Resinoid": [
+        "green",
+        "resinous",
+        "earthy",
+        "woody",
+        "herbaceous",
+        "balsamic",
+        "floral"
+    ],
+    "Habanolide": [
+        "musky",
+        "creamy",
+        "sweet",
+        "warm",
+        "velvety",
+        "floral",
+        "woody"
+    ],
+    "Hedione": [
+        "jasmine",
+        "fresh",
+        "floral",
+        "airy",
+        "citrus",
+        "luminous",
+        "elegant",
+        "soft"
+    ],
+    "Hedione HC": [
+        "intense jasmine",
+        "citrus",
+        "floral",
+        "airy",
+        "fresh",
+        "radiant",
+        "elegant",
+        "long-lasting"
+    ],
+    "Helional": [
+        "oceanic",
+        "green",
+        "floral",
+        "fresh",
+        "dewy",
+        "metallic",
+        "airy",
+        "cool"
+    ],
+    "Heliotropin Replacer": [
+        "powdery",
+        "almond",
+        "vanilla",
+        "floral",
+        "sweet",
+        "warm",
+        "soft",
+        "gourmand"
+    ],
+    "Hivernal": ["eucalyptus", "mint", "fresh", "icy", "sweet", "clean"],
+    "Iralia": ["citrus", "fruity", "floral", "bright", "juicy", "uplifting"],
+    "Iso E Super": [
+        "woody",
+        "velvety",
+        "clean",
+        "resinous",
+        "soft",
+        "sophisticated"
+    ],
+    "Isolongifolanone": [
+        "woody",
+        "resinous",
+        "floral",
+        "rich",
+        "deep",
+        "complex"
+    ],
+    "Jasmine Grandiflorum Absolute": [
+        "floral",
+        "sweet",
+        "rich",
+        "intoxicating",
+        "exotic",
+        "complex"
+    ],
+    "Jasmine Sambac Absolute": [
+        "floral",
+        "sweet",
+        "exotic",
+        "green",
+        "fruity",
+        "uplifting"
+    ],
+    "Kephalis": [
+        "woody",
+        "resinous",
+        "floral",
+        "elegant",
+        "complex",
+        "sophisticated"
+    ],
+    "Koavone": ["creamy", "warm", "floral", "woody", "subtle spice", "inviting"],
+    "Labdanum Absolute": [
+        "balsamic",
+        "amber",
+        "earthy",
+        "sweet",
+        "warm",
+        "resinous"
+    ],
+    "Lavender Absolute": [
+        "floral",
+        "sweet",
+        "herbaceous",
+        "calming",
+        "uplifting",
+        "rich"
+    ],
+    "Lavender EO": [
+        "fresh",
+        "floral",
+        "herbaceous",
+        "invigorating",
+        "clean",
+        "bright"
+    ],
+    "Linalool": ["floral", "sweet", "herbaceous", "calming", "fresh", "delicate"],
+    "Linalool Oxide": [
+        "floral",
+        "herbaceous",
+        "sweet",
+        "refreshing",
+        "clean",
+        "airy"
+    ],
+    "Maritima": ["marine", "salty", "green", "herbaceous", "uplifting", "fresh"],
+    "Mate Absolute": [
+        "earthy",
+        "herbal",
+        "green",
+        "invigorating",
+        "warm",
+        "vital"
+    ],
+    "Methyl Anthranilate": [
+        "fruity",
+        "sweet",
+        "grape",
+        "floral",
+        "green",
+        "uplifting"
+    ],
+    "Methyl Ionone Gamma": [
+        "powdery",
+        "woody",
+        "violet",
+        "soft",
+        "elegant",
+        "comforting"
+    ],
+    "Methyl Laitone": [
+        "creamy",
+        "milky",
+        "sweet",
+        "indulgent",
+        "warm",
+        "luxurious"
+    ],
+    "Mimosa Olessence": [
+        "floral",
+        "powdery",
+        "bright",
+        "uplifting",
+        "airy",
+        "delicate"
+    ],
+    "Muscenone": ["musky", "warm", "animalic", "sweet", "soft", "comforting"],
+    "Musk Blend (Pellwall)": [
+        "animalic",
+        "powdery",
+        "sweet",
+        "complex",
+        "rich",
+        "sensual"
+    ],
+    "Musk Ketone": ["musky", "warm", "soft", "sweet", "comforting", "clean"],
+    "Myrrh Oil": ["earthy", "balsamic", "spicy", "woody", "sweet", "rich"],
+    "Neroli Tunisia P&N": [
+        "floral",
+        "citrusy",
+        "fresh",
+        "uplifting",
+        "sweet",
+        "complex"
+    ],
+    "Oakmoss Absolute": ["earthy", "woody", "mossy", "sweet", "damp", "green"],
+    "Oakwood Absolute": ["woody", "earthy", "sweet", "spicy", "smooth", "creamy"],
+    "Octyl Acetate": ["fruity", "fresh", "earthy", "green", "mushroom", "floral"],
+    "Olibanum Absolute": [
+        "resinous",
+        "warm",
+        "balsamic",
+        "spicy",
+        "sweet",
+        "grounding"
+    ],
+    "Olibanum EO": ["woody", "fresh", "resinous", "uplifting", "spicy", "bright"],
+    "Orange Flower Blend": [
+        "floral",
+        "citrusy",
+        "bright",
+        "uplifting",
+        "delicate",
+        "sweet"
+    ],
+    "Orris Butter Tincture": [
+        "powdery",
+        "floral",
+        "earthy",
+        "velvety",
+        "sweet",
+        "elegant"
+    ],
+    "Ozofleur": ["floral", "green", "fresh", "airy", "sweet", "uplifting"],
+    "Padma": ["aquatic", "floral", "green", "sweet", "serene", "tranquil"],
+    "Patchouli EO": ["earthy", "musky", "deep", "sweet", "woody", "intoxicating"],
+    "Patchouli Light EO": [
+        "earthy",
+        "light",
+        "fresh",
+        "musky",
+        "elegant",
+        "uplifting"
+    ],
+    "Pine Needles EO": [
+        "woody",
+        "fresh",
+        "crisp",
+        "green",
+        "uplifting",
+        "cleansing"
+    ],
+    "Pino Acetaldehyde": ["fresh", "green", "citrus", "bright", "clean", "woody"],
+    "Precyclemone B": ["woody", "earthy", "sweet", "fresh", "elegant", "clean"],
+    "Rose Givco 217": [
+        "floral",
+        "rich",
+        "sweet",
+        "deep",
+        "sophisticated",
+        "romantic"
+    ],
+    "Rose Oil, Bulgarian P&N": [
+        "floral",
+        "sweet",
+        "rich",
+        "warm",
+        "captivating",
+        "serene"
+    ],
+    "Sandalwood EO": [
+        "woody",
+        "creamy",
+        "earthy",
+        "warm",
+        "sweet",
+        "smooth",
+        "tranquil",
+        "spiritual"
+    ],
+    "Sandalwood Mysore": [
+        "deep woody",
+        "rich",
+        "smooth",
+        "sweet",
+        "warm",
+        "luxurious",
+        "calming"
+    ],
+    "Scentenal": [
+        "musky",
+        "woody",
+        "warm",
+        "elegant",
+        "alluring",
+        "deep",
+        "complex"
+    ],
+    "Seaweed Absolute": [
+        "briny",
+        "green",
+        "fresh",
+        "aquatic",
+        "mineral",
+        "earthy",
+        "salty"
+    ],
+    "Sylvamber": [
+        "woody",
+        "amber",
+        "warm",
+        "resinous",
+        "earthy",
+        "sweet",
+        "inviting"
+    ],
+    "Terrasol": [
+        "earthy",
+        "mineral",
+        "damp",
+        "grounding",
+        "organic",
+        "warm",
+        "rich"
+    ],
+    "Timbersilk": ["woody", "smooth", "silky", "warm", "soft", "earthy"],
+    "Timbrox Base": ["woody", "amber", "balsamic", "warm", "rich", "complex"],
+    "Tolu Balsam Essence": [
+        "sweet",
+        "resinous",
+        "vanilla",
+        "spicy",
+        "warm",
+        "creamy"
+    ],
+    "Tonalid": ["fresh", "clean", "powdery", "musky", "light", "airy"],
+    "Trital": ["green", "fresh", "grassy", "crisp", "herbaceous", "invigorating"],
+    "Tuberose Absolute": [
+        "floral",
+        "sweet",
+        "creamy",
+        "rich",
+        "opulent",
+        "seductive"
+    ],
+    "Velvione": ["powdery", "soft", "floral", "musky", "smooth", "comforting"],
+    "Veramoss": ["earthy", "mossy", "green", "sweet", "fresh", "grounding"],
+    "Vernaldehyde": [
+        "fresh",
+        "green",
+        "floral",
+        "vital",
+        "uplifting",
+        "energizing"
+    ],
+    "Vertenex": ["woody", "herbal", "earthy", "green", "complex", "grounding"],
+    "Vertofix Coeur": [
+        "woody",
+        "warm",
+        "green",
+        "earthy",
+        "sophisticated",
+        "harmonious"
+    ],
+    "Vetikone": ["woody", "creamy", "earthy", "sweet", "rich", "complex"],
+    "Vetiveryl Acetat": [
+        "woody",
+        "earthy",
+        "smooth",
+        "sweet",
+        "calming",
+        "refined"
+    ],
+    "Violet Leaf Absolute": [
+        "green",
+        "floral",
+        "fresh",
+        "herbaceous",
+        "uplifting",
+        "sophisticated"
+    ],
+    "Woody Base (Pellwall)": [
+        "woody",
+        "resinous",
+        "earthy",
+        "warm",
+        "complex",
+        "inviting"
+    ],
+    "Ysamber K": ["woody", "warm", "smooth", "sweet", "luxurious", "sensual"],
+    "Z11 10 MIP": [
+        "fresh",
+        "vibrant",
+        "earthy",
+        "modern",
+        "dynamic",
+        "uplifting"
+    ],
+    "1,3 Propanediol": ["sweet", "neutral", "smooth", "slightly sugary"],
+    "5-Methyl-2-Phenyl-2-Hexenal": [
+        "green",
+        "fruity",
+        "cucumber",
+        "melon",
+        "floral"
+    ],
+    "Acetal": ["green", "floral", "fresh", "clean", "herbaceous"],
+    "Acetaldehyde ethyl linalyl acetal": [
+        "fruity",
+        "citrus",
+        "floral",
+        "sweet",
+        "fresh"
+    ],
+    "Acetanisole Crystals": ["sweet", "almond", "creamy", "powdery", "warm"],
+    "Acetate C-8": ["fruity", "tropical", "sweet", "pear", "pineapple"],
+    "Acetate C9": ["green", "fruity", "fresh", "sweet", "apple-like"],
+    "Acetic Acid": ["sharp", "vinegar-like", "pungent", "acidy"],
+    "Acetophenone": ["sweet", "almond-like", "creamy", "floral", "powdery"],
+    "Adoxal": ["floral", "fresh", "clean", "slightly sweet", "fruity"]
+}

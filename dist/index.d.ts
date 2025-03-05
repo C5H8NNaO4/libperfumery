@@ -1,7 +1,7 @@
-import descriptions from "./static/data/generated/descriptions.json";
-import odors from "./static/data/generated/odors.json";
-export * from "./utils/search.js";
-export * from "./utils/perfumersApprentice.js";
+import descriptions from "./src/static/data/generated/descriptions.json";
+import odors from "./src/static/data/generated/odors.json";
+export * from "@/utils/search";
+export * from "@/utils/perfumersApprentice";
 declare const ingredients: ({
     title: string;
     amount: string;
