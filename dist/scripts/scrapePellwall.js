@@ -24,8 +24,8 @@ const run = async (i) => {
 // await run(0);
 const data = await scrape({
     parallel: false,
-    from: 42,
-    to: 43,
+    from: 35,
+    to: 35 + 1,
 });
 await store(data, {
     format: (url) => "page" + url.match(/\d+$/g)?.at(0) + ".json",
