@@ -1,7 +1,7 @@
-import { Sources } from "@/types/Sources";
+import { Sources } from "../../types/Sources.js";
 import clsx from "clsx";
 import { descriptions, odors } from "../../index.js";
-import { attributes, manufacturers, origins, } from "@/static/definitions/ingredients";
+import { attributes, manufacturers, origins, } from "../../static/definitions/ingredients.js";
 export const normalize = (itm, i, arr) => {
     const title = itm?.title
         .replace(/\s\*\*/g, "")
