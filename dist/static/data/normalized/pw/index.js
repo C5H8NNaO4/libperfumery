@@ -9,5 +9,4 @@ async function importPages() {
     const normalizedPW = pages.map((module) => module?.default).flat();
     return normalizedPW;
 }
-const normalized = await importPages();
-export default normalized;
+export default importPages();

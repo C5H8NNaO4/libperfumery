@@ -1,2 +1,2 @@
-declare const normalized: any[];
-export default normalized;
+declare const _default: Promise<any[]>;
+export default _default;
