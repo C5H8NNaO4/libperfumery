@@ -11,4 +11,5 @@ async function importPages() {
   return normalizedPW;
 }
 
-export default importPages();
+const normalized = await importPages();
+export default normalized;
