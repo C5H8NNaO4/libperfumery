@@ -12,6 +12,13 @@ export type NormalizedItem = {
   aliases: string[];
   odors?: string[];
   description?: string;
+  attributes: Attribute[];
 };
 
+export enum AttributeName {
+  origin = "origin",
+  manufacturer = "manufacturer",
+  dilutant = "dilutant",
+}
 
+export type Attribute = Partial<Record<AttributeName, string>>;

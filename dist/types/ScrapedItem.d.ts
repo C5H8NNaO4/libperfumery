@@ -10,7 +10,6 @@ export type ScrapedPWItem = {
     title: string;
     size: string;
     price: string;
-    baseUrl: string;
     cas?: string;
-    link?: string;
+    href?: string;
 };

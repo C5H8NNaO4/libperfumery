@@ -63,5 +63,5 @@ const normalized = [
     page40,
     page41,
     page42,
-];
+].flat();
 export default normalized;

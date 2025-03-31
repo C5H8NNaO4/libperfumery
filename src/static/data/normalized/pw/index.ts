@@ -40,6 +40,7 @@ import page39 from "./page39.json" assert { type: "json" };
 import page40 from "./page40.json" assert { type: "json" };
 import page41 from "./page41.json" assert { type: "json" };
 import page42 from "./page42.json" assert { type: "json" };
+import { NormalizedItem } from "@/types/NormalizedItem";
 
 const normalized = [
   page1,
@@ -74,6 +75,6 @@ const normalized = [
   page40,
   page41,
   page42,
-];
+].flat() as NormalizedItem[];
 
 export default normalized;

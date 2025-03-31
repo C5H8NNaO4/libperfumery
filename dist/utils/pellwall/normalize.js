@@ -8,7 +8,6 @@ export const normalize = (itm, i, arr) => {
         .replace(/\s\(Natural\)/, "")
         .replace(/\s*$/, "")
         .trim();
-    console.log("Normalizing item: '" + title + "'");
     const norm = {
         ...itm,
         dilution: /\d+%/.exec(itm?.title)?.[0] || "100%",
@@ -25,6 +24,7 @@ export const normalize = (itm, i, arr) => {
         source: Sources.PerfumersApprentice,
         odors: odors[itm.title] || null,
         description: descriptions[itm.title] || null,
+        href: itm.href,
     };
     attributes.forEach((tag) => {
         const attrReg = new RegExp(`\\s?-?\\s\\(?${tag}\\)?`, "i");
