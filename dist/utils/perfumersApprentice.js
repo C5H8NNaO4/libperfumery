@@ -8,7 +8,6 @@ export const normalize = ({ amount, ...itm }, i, arr) => {
         .replace(/\s\(Natural\)/, "")
         .replace(/\s*$/, "")
         .trim();
-    console.log("Normalizing item: '" + title + "'");
     const norm = {
         ...itm,
         size: amount,
