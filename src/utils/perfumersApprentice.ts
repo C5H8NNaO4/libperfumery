@@ -7,6 +7,7 @@ import {
   attributes,
   manufacturers,
   origins,
+  titleTags,
 } from "@/static/definitions/ingredients";
 
 export const normalize = (
@@ -125,5 +126,10 @@ export const normalize = (
       norm.title = norm.title.replace(origin, "").trim();
     }
   });
+
+  for (const tag of norm.tags) {
+    if (titleTags.includes(tag)) norm.title += " " + tag;
+  }
+
   return norm;
 };

@@ -1,24 +1,26 @@
 declare const normalized: ({
     title: string;
-    amount: string;
     price: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: string[];
     attributes: any[];
     aliases: string[];
     source: string;
+    odors: any;
+    description: any;
     cas?: undefined;
 } | {
     title: string;
-    amount: string;
     price: string;
     cas: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: ({
@@ -30,26 +32,30 @@ declare const normalized: ({
     })[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
 } | {
     title: string;
-    amount: string;
     price: string;
     cas: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: string[];
     attributes: any[];
     aliases: string[];
     source: string;
+    odors: any;
+    description: any;
 } | {
     title: string;
-    amount: string;
     price: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: {
@@ -57,15 +63,32 @@ declare const normalized: ({
     }[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
     cas?: undefined;
 } | {
     title: string;
-    amount: string;
     price: string;
     cas: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: string[];
+    description: string;
+} | {
+    title: string;
+    price: string;
+    cas: string;
+    scrapedAt: number;
+    baseUrl: string;
+    link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: {
@@ -73,13 +96,15 @@ declare const normalized: ({
     }[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
 } | {
     title: string;
-    amount: string;
     price: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: {
@@ -87,15 +112,17 @@ declare const normalized: ({
     }[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
     cas?: undefined;
 } | {
     title: string;
-    amount: string;
     price: string;
     cas: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: {
@@ -103,14 +130,16 @@ declare const normalized: ({
     }[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
 } | {
     title: string;
-    amount: string;
     price: string;
     cas: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: {
@@ -118,13 +147,15 @@ declare const normalized: ({
     }[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
 } | {
     title: string;
-    amount: string;
     price: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: string[];
     attributes: ({
@@ -136,14 +167,16 @@ declare const normalized: ({
     })[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
     cas?: undefined;
 } | {
     title: string;
-    amount: string;
     price: string;
     scrapedAt: number;
     baseUrl: string;
     link: string;
+    size: string;
     dilution: string;
     tags: any[];
     attributes: {
@@ -151,6 +184,23 @@ declare const normalized: ({
     }[];
     aliases: any[];
     source: string;
+    odors: any;
+    description: any;
+    cas?: undefined;
+} | {
+    title: string;
+    price: string;
+    scrapedAt: number;
+    baseUrl: string;
+    link: string;
+    size: string;
+    dilution: string;
+    tags: any[];
+    attributes: any[];
+    aliases: any[];
+    source: string;
+    odors: string[];
+    description: string;
     cas?: undefined;
 })[];
 export default normalized;

@@ -14,6 +14,7 @@ export const attributes = [
     "Natural",
     "P&N",
     "Premium",
+    "Pure",
 ];
 export const manufacturers = [
     "Givaudan",
@@ -39,3 +40,4 @@ export const origins = [
     "Romania",
     "Egyptian",
 ];
+export const titleTags = ["Absolute"];

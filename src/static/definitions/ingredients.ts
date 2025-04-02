@@ -14,6 +14,7 @@ export const attributes = [
   "Natural",
   "P&N",
   "Premium",
+  "Pure",
 ];
 
 export const manufacturers = [
@@ -41,3 +42,5 @@ export const origins = [
   "Romania",
   "Egyptian",
 ];
+
+export const titleTags = ["Absolute"];

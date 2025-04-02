@@ -1,7 +1,7 @@
 import { Sources } from "../types/Sources.js";
 import clsx from "clsx";
 import { descriptions, odors } from "../index.js";
-import { attributes, manufacturers, origins, } from "../static/definitions/ingredients.js";
+import { attributes, manufacturers, origins, titleTags, } from "../static/definitions/ingredients.js";
 export const normalize = ({ amount, ...itm }, i, arr) => {
     const title = itm?.title
         .replace(/\s\*\*/g, "")
@@ -113,5 +113,9 @@ export const normalize = ({ amount, ...itm }, i, arr) => {
             norm.title = norm.title.replace(origin, "").trim();
         }
     });
+    for (const tag of norm.tags) {
+        if (titleTags.includes(tag))
+            norm.title += " " + tag;
+    }
     return norm;
 };

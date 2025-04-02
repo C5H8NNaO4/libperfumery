@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc --build && tsc-alias",
+    "normalize": "yarn build &&  node ./dist/scripts/renormalize.js",
     "scrapePA": "yarn build &&  node ./dist/scripts/scrape.js",
     "scrapePW": "yarn build &&  node ./dist/scripts/scrapePellwall.js",
     "test": "jest"
