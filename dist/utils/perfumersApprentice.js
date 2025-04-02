@@ -1,4 +1,3 @@
-import { Sources } from "../types/Sources.js";
 import clsx from "clsx";
 import { descriptions, odors } from "../index.js";
 import { attributes, manufacturers, origins, titleTags, } from "../static/definitions/ingredients.js";
@@ -22,7 +21,7 @@ export const normalize = ({ amount, ...itm }, i, arr) => {
             .filter(Boolean),
         attributes: [],
         aliases: [],
-        source: Sources.PerfumersApprentice,
+        source: 'PA',
         odors: odors[itm.title] || null,
         description: descriptions[itm.title] || null,
     };

@@ -1,6 +1,5 @@
 import { NormalizedItem } from "@/types/NormalizedItem";
-import { ScrapedPAItem, ScrapedPWItem } from "@/types/ScrapedItem";
-import { Sources } from "@/types/Sources";
+import { ScrapedPWItem } from "@/types/ScrapedItem";
 import clsx from "clsx";
 import { descriptions, odors } from "../..";
 import {
@@ -32,7 +31,7 @@ export const normalize = (
       .filter(Boolean),
     attributes: [],
     aliases: [] as string[],
-    source: Sources.PerfumersApprentice,
+    source: 'PA',
     odors: odors[itm.title] || null,
     description: descriptions[itm.title] || null,
     href: itm.href,
