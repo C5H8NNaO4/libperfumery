@@ -40,4 +40,4 @@ export const origins = [
     "Romania",
     "Egyptian",
 ];
-export const titleTags = ["Absolute"];
+export const titleTags = ["Absolute", "Blend"];

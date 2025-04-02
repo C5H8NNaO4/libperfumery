@@ -43,4 +43,4 @@ export const origins = [
   "Egyptian",
 ];
 
-export const titleTags = ["Absolute"];
+export const titleTags = ["Absolute", "Blend"];
