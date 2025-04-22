@@ -9,6 +9,7 @@
     "normalize": "yarn build &&  node ./dist/scripts/renormalize.js",
     "scrapePA": "yarn build &&  node ./dist/scripts/scrape.js",
     "scrapePW": "yarn build &&  node ./dist/scripts/scrapePellwall.js",
+    "scrapeIFRA": "yarn build &&  node ./dist/scripts/scrapeIFRAStdLib.js",
     "test": "jest"
   },
   "repository": {
