@@ -6,6 +6,7 @@ import normalizedIFRAStdLib from "./static/data/normalized/ifra/index.js";
 export * from "./utils/search.js";
 export * from "./utils/perfumersApprentice.js";
 export * from "./utils/ifra/util.js";
+export * from "./static/data/normalized/ifra/index.js";
 const ingredients = [normalizedPA, normalizedPW].flat();
 const stores = {
     PellWall: normalizedPW,

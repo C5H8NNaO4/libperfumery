@@ -3,6 +3,7 @@ import odors from "./static/data/generated/odors.json";
 export * from "./utils/search.js";
 export * from "./utils/perfumersApprentice.js";
 export * from "./utils/ifra/util.js";
+export * from "./static/data/normalized/ifra/index.js";
 declare const ingredients: ({
     title: string;
     price: string;

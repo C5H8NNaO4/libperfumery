@@ -6,6 +6,7 @@ import normalizedIFRAStdLib from "./static/data/normalized/ifra";
 export * from "@/utils/search";
 export * from "@/utils/perfumersApprentice";
 export * from "@/utils/ifra/util";
+export * from "@/static/data/normalized/ifra";
 
 const ingredients = [normalizedPA, normalizedPW].flat();
 
