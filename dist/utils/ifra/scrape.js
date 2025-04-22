@@ -51,7 +51,12 @@ const scrape = async ({ parallel = false, from = 0, to = 1 } = {}) => {
                     cas,
                     attributes: [
                         ...flags.map((f) => ({ type: "flag", iss: "IFRA", value: f })),
-                        { type: "amendment", iss: "IFRA", value: amendment },
+                        {
+                            type: "reference",
+                            name: "amendment",
+                            iss: "IFRA",
+                            value: amendment,
+                        },
                         { type: "date", iss: "IFRA", name: "addedAt", value: date },
                         {
                             type: "date",

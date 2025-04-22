@@ -56,7 +56,7 @@ const scrape = async ({ parallel = false, from = 0, to = 1 } = {}) => {
         try {
           const cas = tds[2];
           const name = tds[3];
-          const flags = tds[4]?.split("-") 
+          const flags = tds[4]?.split("-");
           let date = null;
           try {
             date = new Date(tds[5]).toISOString();
@@ -67,7 +67,12 @@ const scrape = async ({ parallel = false, from = 0, to = 1 } = {}) => {
             cas,
             attributes: [
               ...flags.map((f) => ({ type: "flag", iss: "IFRA", value: f })),
-              { type: "amendment", iss: "IFRA", value: amendment },
+              {
+                type: "reference",
+                name: "amendment",
+                iss: "IFRA",
+                value: amendment,
+              },
               { type: "date", iss: "IFRA", name: "addedAt", value: date },
               {
                 type: "date",
@@ -85,7 +90,7 @@ const scrape = async ({ parallel = false, from = 0, to = 1 } = {}) => {
             ],
           };
         } catch (e) {
-            console.log("TDS", tds)
+          console.log("TDS", tds);
           throw e;
         }
         return null;

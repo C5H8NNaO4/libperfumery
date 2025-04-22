@@ -1,1 +1,1 @@
-export declare const normalize: (ele: any) => void;
+export declare const normalize: (ele: any) => any;
